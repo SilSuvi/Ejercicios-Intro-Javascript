@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 14</title>
+  </head>
+  <body>
+    <script>
+      let metros = parseInt(window.prompt("Dime una distancia en metros"));
+      let horas = parseInt(
+        window.prompt("Dime cuánto se tarda en recorrer esa distancia en horas")
+      );
+      let minutos = parseInt(window.prompt("Ahora en minutos"));
+      let segundos = parseInt(window.prompt("Y ahora en segundos"));
+
+      let horasSegundos = horas * 3600;
+      let minutosSegundos = minutos * 60;
+      let resultado = metros / (horasSegundos + minutosSegundos + segundos);
+
+      console.log("Para recorrer la distancia, vas a " + resultado + " m/s");
+      console.log("Y también vas a  " + (resultado / 1000) * 3600 + " km/h");
+    </script>
+  </body>
+</html>
